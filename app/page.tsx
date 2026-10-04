@@ -41,28 +41,28 @@ export default async function Page() {
               aria-current="page"
               className="px-space-md py-1.5 rounded transition-colors bg-surface-container-high text-primary font-medium border-b-2 border-primary"
               data-path="overview"
-              href="#"
+              href="#top"
             >
               Overview
             </a>
             <a
               className="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm"
               data-path="active-repos"
-              href="#"
+              href="#repos-section"
             >
               Active Repos
             </a>
             <a
               className="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm"
               data-path="architecture-deep-dives"
-              href="#"
+              href="#case-studies-section"
             >
               Architecture Deep-Dives
             </a>
             <a
               className="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm"
               data-path="core-stack"
-              href="#"
+              href="#core-stack-section"
             >
               Core Stack
             </a>
@@ -88,7 +88,7 @@ export default async function Page() {
             <a
               className="flex items-center gap-space-xs px-space-md py-2 rounded bg-primary-container text-on-primary-container hover:bg-primary transition-colors font-headline-sm text-headline-sm font-medium"
               data-path="connect"
-              href="#"
+              href="#contact-section"
             >
               <span className="material-symbols-outlined text-[16px]">
                 terminal
@@ -1035,7 +1035,7 @@ export default async function Page() {
             <a
               className="font-code-md text-code-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1"
               data-path="pgp-key"
-              href="#"
+              href="#contact-section"
             >
               <span className="material-symbols-outlined text-[14px]">key</span>
               PGP Key
