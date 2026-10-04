@@ -959,7 +959,7 @@ export default async function Page() {
               <div className="flex flex-wrap items-center gap-space-md shrink-0">
                 <a
                   className="relative flex items-center gap-2 px-space-lg py-3 rounded-sm bg-[#FCEE09] text-[#161310] hover:bg-[#ffe600] font-headline-sm text-headline-sm font-bold transition-all shadow-[0_0_18px_rgba(252,238,9,0.35)] border-l-4 border-[#00F0FF]"
-                  href="mailto:brandon@example.com"
+                  href="mailto:brandonhorishny@gmail.com"
                 >
                   <span className="material-symbols-outlined text-[18px] text-[#161310]">
                     cell_tower
@@ -971,7 +971,7 @@ export default async function Page() {
                 </a>
                 <a
                   className="flex items-center gap-2 px-space-md py-3 rounded bg-surface-container text-on-surface hover:text-primary transition-colors font-headline-sm text-headline-sm"
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/brandon-horishny"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -1026,7 +1026,7 @@ export default async function Page() {
             </a>
             <a
               className="font-code-md text-code-md text-on-surface-variant hover:text-primary transition-colors"
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/brandon-horishny"
               rel="noreferrer"
               target="_blank"
             >
