@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none">
+  <defs>
+    <!-- Cyberpunk 2077 Signature Palettes -->
+    <!-- Iconic Neon Canary Yellow / Arasaka & Night City yellow -->
+    <linearGradient id="cpYellowGrad" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE600"/>
+      <stop offset="60%" stop-color="#FCEE09"/>
+      <stop offset="100%" stop-color="#E28400"/>
+    </linearGradient>
+
+    <!-- High-voltage Cyan / Trauma Team Neon Teal -->
+    <linearGradient id="cpCyanGrad" x1="30" y1="130" x2="130" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#00A2FF"/>
+    </linearGradient>
+
+    <!-- Hot Neon Pink / Laser Magenta -->
+    <linearGradient id="cpPinkGrad" x1="20" y1="80" x2="140" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF003C"/>
+      <stop offset="100%" stop-color="#B0002A"/>
+    </linearGradient>
+
+    <!-- Glow filters for high-luminescence chrome -->
+    <filter id="neonGlowYellow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="scanlines" width="160" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="160" y2="0" stroke="#000000" stroke-width="1.2" stroke-opacity="0.5"/>
+    </pattern>
+
+    <pattern id="hexGrid" width="16" height="28" patternUnits="userSpaceOnUse">
+      <path d="M8 0L16 4.5V13.5L8 18L0 13.5V4.5L8 0Z" stroke="#FFE600" stroke-opacity="0.07" stroke-width="0.75" fill="none"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep Distressed Pitch-Black / Carbon Chassis with 45-degree Angled Cyber Slices -->
+  <!-- Outer Chassis -->
+  <polygon points="34,10 126,10 152,36 152,118 122,150 28,150 8,130 8,36" fill="#050505" stroke="#FFE600" stroke-width="2.5"/>
+
+  <!-- Secondary Industrial Sub-Plate -->
+  <polygon points="38,16 122,16 146,40 146,114 118,144 32,144 14,126 14,40" fill="#0D0D11" stroke="#22222E" stroke-width="1.5"/>
+
+  <!-- Cyberpunk Scanline & Carbon Hex Overlay -->
+  <polygon points="38,16 122,16 146,40 146,114 118,144 32,144 14,126 14,40" fill="url(#hexGrid)"/>
+  <polygon points="38,16 122,16 146,40 146,114 118,144 32,144 14,126 14,40" fill="url(#scanlines)"/>
+
+  <!-- Industrial Cyberpunk Warning Chevron / Caution Decal (Top Right) -->
+  <g opacity="0.9">
+    <polygon points="120,18 126,18 142,34 142,40 136,40 120,24" fill="#FCEE09"/>
+    <polygon points="128,18 134,18 144,28 144,34" fill="#FCEE09"/>
+    <polygon points="112,18 118,18 142,42 142,48 136,48 112,24" fill="#FCEE09" opacity="0.6"/>
+  </g>
+
+  <!-- Optical Targeting Reticle & Sub-Assembly Ticks -->
+  <path d="M12 28 H22 M12 28 V38" stroke="#00F0FF" stroke-width="2" stroke-linecap="square"/>
+  <path d="M148 124 H138 M148 124 V114" stroke="#FF003C" stroke-width="2" stroke-linecap="square"/>
+  <circle cx="26" cy="22" r="1.5" fill="#00F0FF"/>
+  <circle cx="134" cy="138" r="1.5" fill="#FF003C"/>
+
+  <!-- Military Spec Telemetry & Barcode Details -->
+  <!-- Top Barcode Spec -->
+  <rect x="42" y="22" width="2" height="6" fill="#FCEE09" fill-opacity="0.8"/>
+  <rect x="46" y="22" width="4" height="6" fill="#FCEE09" fill-opacity="0.8"/>
+  <rect x="52" y="22" width="1.5" height="6" fill="#FCEE09" fill-opacity="0.8"/>
+  <rect x="55" y="22" width="3" height="6" fill="#FCEE09" fill-opacity="0.8"/>
+  <rect x="60" y="22" width="1.5" height="6" fill="#FCEE09" fill-opacity="0.8"/>
+  <text x="66" y="27.5" fill="#FCEE09" font-family="'Geist Mono', 'Consolas', monospace" font-size="6" font-weight="900" letter-spacing="1">MOD//BH-2077</text>
+
+  <!-- Glitched Offset Ghost Silhouette (Chromatic Aberration Effect) in Cyan & Pink -->
+  <!-- Cyan Glitch Shift (-2px, +1.5px) -->
+  <path d="M38 35.5 H76 C91 35.5 101 45.5 101 56.5 C101 64 96 70.5 89 74.5 C99 78.5 105 87 105 98.5 C105 111.5 94 122.5 78 122.5 H38 V35.5 Z" 
+        stroke="#00F0FF" stroke-width="2.5" fill="none" opacity="0.45" stroke-linejoin="miter"/>
+  
+  <!-- Pink Glitch Shift (+2px, -1.5px) -->
+  <path d="M42 32.5 H80 C95 32.5 105 42.5 105 53.5 C105 61 100 67.5 93 71.5 C103 75.5 109 84 109 95.5 C109 108.5 98 119.5 82 119.5 H42 V32.5 Z" 
+        stroke="#FF003C" stroke-width="2.5" fill="none" opacity="0.4" stroke-linejoin="miter"/>
+
+  <!-- Main Cyberpunk 2077 "B" Glyph with Stencil Slices & Industrial Chamfers -->
+  <!-- Top Segment of B -->
+  <polygon points="40,34 78,34 98,48 98,62 82,72 40,72" fill="#141419" stroke="url(#cpYellowGrad)" stroke-width="5" stroke-linejoin="miter" filter="url(#neonGlowYellow)"/>
+  
+  <!-- Top Counter Cutout -->
+  <polygon points="54,44 74,44 84,52 84,58 76,62 54,62" fill="#000000" stroke="#00F0FF" stroke-width="2"/>
+  <polygon points="56,46 72,46 80,52 80,56 74,60 56,60" fill="#00F0FF" fill-opacity="0.15"/>
+
+  <!-- Bottom Segment of B (Aggressive Cyberpunk Angle & Sliced Negative Space) -->
+  <polygon points="40,76 83,76 102,88 102,106 84,121 40,121" fill="#141419" stroke="url(#cpYellowGrad)" stroke-width="5" stroke-linejoin="miter" filter="url(#neonGlowYellow)"/>
+  
+  <!-- Bottom Counter Cutout -->
+  <polygon points="54,86 78,86 88,94 88,102 78,110 54,110" fill="#000000" stroke="#00F0FF" stroke-width="2"/>
+  <polygon points="56,88 76,88 84,94 84,100 76,108 56,108" fill="#00F0FF" fill-opacity="0.15"/>
+
+  <!-- Glitch Slice Blade: High-Contrast Cut Through Center Horizontally -->
+  <polygon points="34,70 128,70 124,75 30,75" fill="#FCEE09"/>
+  <polygon points="36,73 130,73 126,76 32,76" fill="#00F0FF"/>
+
+  <!-- Integrated "H" Cybernetic Extension & Stencil Tines -->
+  <!-- The crossbar slices through the B into high-voltage cyan / neon yellow prongs -->
+  <path d="M78 73 H124" stroke="url(#cpYellowGrad)" stroke-width="7" stroke-linecap="square"/>
+  <path d="M118 52 V94" stroke="url(#cpCyanGrad)" stroke-width="6" stroke-linecap="square" filter="url(#neonGlowCyan)"/>
+  <rect x="114" y="67" width="8" height="12" fill="#FCEE09"/>
+
+  <!-- Cyberware Data Ports & Micro Socket Terminals -->
+  <circle cx="118" cy="52" r="3.5" fill="#FFE600" stroke="#000" stroke-width="1.5"/>
+  <circle cx="118" cy="94" r="3.5" fill="#FFE600" stroke="#000" stroke-width="1.5"/>
+  
+  <!-- Angled Cyber-Decal Accents & Hazard Stripes -->
+  <!-- Bottom Hazard Strip -->
+  <g transform="translate(42, 131)">
+    <polygon points="0,0 8,0 4,8 0,8" fill="#FCEE09"/>
+    <polygon points="8,0 16,0 12,8 4,8" fill="#1A1A22"/>
+    <polygon points="16,0 24,0 20,8 12,8" fill="#FCEE09"/>
+    <polygon points="24,0 32,0 28,8 20,8" fill="#1A1A22"/>
+    <polygon points="32,0 40,0 36,8 28,8" fill="#FCEE09"/>
+    <polygon points="40,0 48,0 44,8 36,8" fill="#1A1A22"/>
+    <polygon points="48,0 56,0 52,8 44,8" fill="#FCEE09"/>
+    <polygon points="56,0 64,0 60,8 52,8" fill="#1A1A22"/>
+    <polygon points="64,0 72,0 68,8 60,8" fill="#FCEE09"/>
+  </g>
+
+  <!-- Optical Crosshair & HUD Corner Coordinate -->
+  <line x1="28" y1="92" x2="28" y2="108" stroke="#FCEE09" stroke-width="1.5"/>
+  <line x1="22" y1="100" x2="34" y2="100" stroke="#FCEE09" stroke-width="1.5"/>
+  
+  <text x="82" y="137" fill="#888899" font-family="'Geist Mono', 'Consolas', monospace" font-size="5" font-weight="700">SYS_OVERRIDE // V2.0.77</text>
+  <rect x="22" y="44" width="4" height="2" fill="#FF003C"/>
+  <rect x="22" y="48" width="4" height="2" fill="#FCEE09"/>
+  <rect x="22" y="52" width="4" height="2" fill="#00F0FF"/>
+</svg>

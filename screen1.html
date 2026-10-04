@@ -1,0 +1,455 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&amp;display=swap" rel="stylesheet"><style id="palette-overrides" class="">:root, html, body { --tw-bg-opacity: 1; } body.bg-surface { background-color: #09090d !important; } .bg-surface { background-color: #09090d !important; } .bg-surface-container-lowest { background-color: #060608 !important; } .bg-surface-container-low { background-color: #0e0e13 !important; } .bg-surface-container { background-color: #14141b !important; } .bg-surface-container-high { background-color: #1c1c25 !important; } .bg-surface-container-highest { background-color: #242430 !important; } .border-surface-container-highest\/40, .border-surface-container-highest\/60, .border-surface-container-highest\/80, .border-surface-container-highest { border-color: rgba(45, 45, 60, 0.75) !important; } [class*='bg-\[#161310\]'] { background-color: #0a0a0f !important; } [class*='text-\[#161310\]'] { color: #08080c !important; } [class*='bg-\[#1e1b18\]'] { background-color: #161620 !important; } [class*='bg-\[#101014\]'] { background-color: #0c0c11 !important; } [class*='bg-\[#121217\]'] { background-color: #0e0e14 !important; } [class*='bg-\[#14141c\]'] { background-color: #101018 !important; } [class*='bg-\[#121518\]'] { background-color: #0c1015 !important; } [class*='text-\[#FF0055\]'], [style*='color: rgb(255, 0, 85)'], [style*='color: #FF0055'] { color: #FB7185 !important; } [class*='border-\[#FF0055\]'] { border-color: rgba(251, 113, 133, 0.4) !important; } [class*='bg-\[#FF0055\]\/20'] { background-color: rgba(244, 63, 94, 0.18) !important; } [class*='bg-\[#FF0055\]'] { background-color: #F43F5E !important; } [class*='shadow-\[0_0_15px_rgba(255,0,85'] { box-shadow: 0 0 15px rgba(244, 63, 94, 0.16) !important; }</style><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#383430","secondary-fixed-dim":"#ffb77d","inverse-surface":"#e9e1dc","tertiary":"#99d1d0","primary-container":"#14b8a6","on-secondary-container":"#432100","background":"#161310","surface-bright":"#3c3835","tertiary-fixed":"#b4edec","tertiary-fixed-dim":"#99d1d0","primary":"#4fdbc8","surface-container-low":"#1e1b18","surface-variant":"#383430","error-container":"#93000a","on-surface-variant":"#bbcac6","outline":"#859490","on-tertiary-container":"#004242","on-secondary-fixed-variant":"#6e3900","on-error-container":"#ffdad6","outline-variant":"#3c4947","secondary-container":"#d97707","inverse-primary":"#006b5f","on-primary":"#003731","on-primary-fixed-variant":"#005048","on-tertiary-fixed":"#002020","on-tertiary":"#003737","on-primary-container":"#00423b","inverse-on-surface":"#33302c","on-background":"#e9e1dc","on-secondary":"#4d2600","surface-dim":"#161310","primary-fixed-dim":"#4fdbc8","surface-container-lowest":"#100e0b","surface":"#161310","on-primary-fixed":"#00201c","surface-container-high":"#2d2926","secondary-fixed":"#ffdcc3","on-secondary-fixed":"#2f1500","primary-fixed":"#71f8e4","on-surface":"#e9e1dc","surface-tint":"#4fdbc8","on-error":"#690005","on-tertiary-fixed-variant":"#114f4f","error":"#ffb4ab","secondary":"#ffb77d","tertiary-container":"#77aead","surface-container":"#221f1c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"2.5rem","gutter-desktop":"1.5rem","space-lg":"1.25rem","space-xs":"0.25rem","space-xl":"2rem","margin":"1rem","gutter":"1rem","space-2xl":"3rem","space-md":"0.75rem","space-sm":"0.5rem"},"fontFamily":{"display":["Geist"],"headline-md":["Geist"],"body-lg":["Geist"],"telemetry-badge":["JetBrains Mono"],"body-sm":["Geist"],"telemetry-metric":["JetBrains Mono"],"headline-lg-mobile":["Geist"],"headline-lg":["Geist"],"code-lg":["JetBrains Mono"],"headline-sm":["Geist"],"display-mobile":["Geist"],"body-md":["Geist"],"code-md":["JetBrains Mono"]},"fontSize":{"display":["44px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"400"}],"telemetry-badge":["10px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"telemetry-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"600"}],"code-lg":["14px",{"lineHeight":"22px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"code-md":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 w-full bg-surface-container-lowest/80 backdrop-blur-xl border-b border-surface-container-highest/40"><div class="h-16 w-full max-w-[1600px] mx-auto px-gutter md:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><div class="relative flex items-center justify-center shrink-0 w-9 h-9 rounded bg-[#0d0d12] border border-[#FCEE09]/30 shadow-[0_0_12px_rgba(252,238,9,0.18)]"><img alt="BH 2077 Cyber Mark" class="h-8 w-8 object-contain drop-shadow-[0_0_6px_rgba(0,240,255,0.4)]" src="https://lh3.googleusercontent.com/aida/AEtjO1XfXWHy9ZDMGvxaJD6_aOZV3CzYSoaoaiTmAPyC2DN9sGDUG51TMHt5nJqBC3_21NJM1EzQnGbhmp2dg82qKDv5kG2hs5dD7EbK3VWLLV-rrHtRmiMVbEBz3APSiT0VLfW_3XykDY-67kIHI2H_dUXn4aAElPJ3BkNlar21PnY_DgyOsZgLBLibjQyObO_Uockl7dBz_qoxMPWA5ra9TvMEGrxM0ackNXZEdLh_DIFKowWGo3tJ99o1Yy8"><div class="absolute -bottom-0.5 -right-0.5 w-1.5 h-1.5 bg-[#FCEE09]"></div><div class="absolute -top-0.5 -left-0.5 w-1.5 h-1.5 bg-[#00F0FF]"></div></div><div class="flex items-baseline gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">BH</span><span class="font-code-md text-code-md text-outline">//</span><span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">AI Builder</span></div><span class="font-telemetry-badge text-telemetry-badge uppercase px-1.5 py-0.5 rounded bg-[#101014] text-[#FCEE09] border border-[#FCEE09]/40 tracking-wider flex items-center gap-1 shadow-[0_0_8px_rgba(252,238,9,0.15)]"><span class="w-1 h-1 bg-[#00F0FF] rounded-full animate-ping"></span>[MOD//2.4-PR]</span></div><nav class="hidden lg:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-low border border-surface-container-highest/60" data-active-classes="bg-surface-container-high text-primary font-medium border-b-2 border-primary"><a aria-current="page" class="px-space-md py-1.5 rounded transition-colors bg-surface-container-high text-primary font-medium border-b-2 border-primary" data-path="overview" href="#">Overview</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm" data-path="active-repos" href="#">Active Repos</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm" data-path="architecture-deep-dives" href="#">Architecture Deep-Dives</a><a class="px-space-md py-1.5 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors font-body-sm text-body-sm" data-path="core-stack" href="#">Core Stack</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="hidden sm:flex items-center gap-2 px-space-md py-1 rounded bg-surface-container border border-surface-container-highest/80 hover:border-primary/40 transition-colors" href="https://github.com" rel="noreferrer" target="_blank"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-code-md text-code-md text-on-surface-variant">Live on GitHub</span><span class="font-telemetry-badge text-telemetry-badge text-primary bg-surface-container-highest px-1 rounded">2,841</span></a><a class="flex items-center gap-space-xs px-space-md py-2 rounded bg-primary-container text-on-primary-container hover:bg-primary transition-colors font-headline-sm text-headline-sm font-medium" data-path="connect" href="#"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="">Connect</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Line -->
+<div class="w-full h-px bg-gradient-to-r from-transparent via-[#00F0FF]/50 to-transparent relative"><div class="absolute left-1/2 -translate-x-1/2 -top-[1px] w-48 h-[2px] bg-gradient-to-r from-transparent via-[#FCEE09] to-transparent shadow-[0_0_8px_#FCEE09]"></div></div>
+<!-- Main Container -->
+<div class="w-full max-w-[1600px] mx-auto px-gutter md:px-margin-desktop py-space-xl flex flex-col gap-space-2xl">
+<!-- 1. Executive Hero & Strategic Impact -->
+<section class="flex flex-col gap-space-xl relative">
+<!-- Background Ambient Radial Glow -->
+<div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -top-12 right-1/4 w-80 h-80 bg-secondary-container/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Eyebrow & Status Flag -->
+<div class="flex flex-wrap items-center justify-between gap-space-md"><div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-sm bg-[#121217] border border-[#00F0FF]/30 shadow-[0_0_12px_rgba(0,240,255,0.08)] relative overflow-hidden"><div class="absolute left-0 top-0 bottom-0 w-0.5 bg-[#00F0FF]"></div><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00F0FF] opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-[#00F0FF]"></span></span><span class="font-telemetry-badge text-telemetry-badge uppercase text-[#00F0FF] tracking-wider font-semibold">[NET//SPEC] APPLIED AI • TALENT SYSTEMS ARCHITECTURE • AUTONOMOUS RUNTIMES</span></div><div class="flex items-center gap-2 font-code-md text-code-md text-on-surface-variant bg-[#121217] border border-[#FCEE09]/30 px-3 py-1 rounded-sm shadow-[0_0_10px_rgba(252,238,9,0.08)]"><span class="inline-block w-2 h-2 bg-[#FCEE09] shadow-[0_0_6px_#FCEE09]"></span><span class="font-telemetry-badge tracking-wider text-[#FCEE09]">SYS//OVERRIDE:</span><span class="text-on-surface font-semibold">ONLINE • PROD_SYNC_V2.077</span></div></div>
+<!-- Main Headline + Value Narrative Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<h1 class="font-display text-display text-on-surface tracking-tight max-w-4xl text-balance">
+            Architecting Enterprise AI Systems <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-fixed">&amp; Validated Prototypes</span>.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+            13+ years bridging enterprise talent infrastructure with zero-to-one AI prototyping. Specializing in production-grade RAG workflows, high-throughput SCORM/xAPI catalog parsers, and custom contextual data stores that unlock legacy corporate systems.
+          </p>
+</div>
+<!-- Terminal Quick Action Card -->
+
+</div>
+<!-- Action Buttons Row -->
+<div class="flex flex-wrap items-center gap-space-md pt-2"><a class="group relative flex items-center gap-2 px-space-lg py-3 rounded-sm bg-[#FCEE09] text-[#161310] font-headline-sm text-headline-sm font-semibold transition-all hover:bg-[#ffe600] shadow-[0_0_16px_rgba(252,238,9,0.3)] border-b-2 border-[#b0002a]" href="#repos-section"><span class="material-symbols-outlined text-[18px] text-[#161310]">folder_code</span><span class="tracking-tight font-bold">EXPLORE REPOSITORIES</span><span class="font-telemetry-badge text-[9px] bg-[#161310] text-[#FCEE09] px-1 py-0.2 rounded-xs ml-1">[EXEC]</span></a><a class="flex items-center gap-2 px-space-lg py-3 rounded-sm bg-surface-container text-on-surface hover:text-[#00F0FF] hover:border-[#00F0FF]/60 border border-surface-container-highest transition-all font-headline-sm text-headline-sm font-medium shadow-sm" href="#case-studies-section"><span class="material-symbols-outlined text-[18px] text-[#00F0FF]">account_tree</span><span class="">View Architecture Specs</span></a><a class="flex items-center gap-2 px-space-md py-3 rounded text-on-surface-variant hover:text-[#FCEE09] font-headline-sm text-headline-sm transition-colors border border-transparent hover:border-[#FCEE09]/30" href="#contact-section"><span class="material-symbols-outlined text-[18px] text-[#FCEE09]">terminal</span><span class="">Connect Direct</span><span class="font-code-md text-code-md text-[#00F0FF]">[SYS_LINK →]</span></a></div>
+<!-- 4-Column Quick Stat Metrics Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm pt-space-md"><!-- Stat 1 --><div class="relative bg-[#121217] p-space-lg rounded-sm border border-surface-container-highest/60 flex flex-col justify-between shadow-sm overflow-hidden"><div class="absolute top-0 right-0 w-2 h-2 border-t-2 border-r-2 border-[#00F0FF]/40"></div><div class="flex items-center justify-between pb-space-sm"><span class="font-telemetry-badge text-telemetry-badge uppercase text-[#00F0FF] tracking-wider">// TENOR_CYCLE</span><span class="material-symbols-outlined text-outline text-[18px]">domain_verification</span></div><div class="flex flex-col"><span class="font-telemetry-metric text-telemetry-metric text-on-surface font-semibold tracking-tight" style="font-family: 'Geist', 'Inter', sans-serif !important;">13+ Years</span><span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Talent Systems &amp; Core Infrastructure</span></div></div><!-- Stat 2 (Canary Cyber Highlight) --><div class="relative bg-[#14141c] p-space-lg rounded-sm border border-[#FF0055]/40 flex flex-col justify-between shadow-[0_0_15px_rgba(255,0,85,0.12)] overflow-hidden"><div class="absolute top-0 right-0 w-3 h-3 bg-[#F43F5E]/20 border-t border-r border-[#FB7185]"></div><div class="absolute -left-0.5 top-2 bottom-2 w-0.5 bg-[#FB7185]"></div><div class="flex items-center justify-between pb-space-sm"><span class="font-telemetry-badge text-telemetry-badge uppercase text-[#FB7185] font-semibold tracking-wider">// EFFICIENCY_YIELD</span><span class="material-symbols-outlined text-[#FB7185] text-[18px]">speed</span></div><div class="flex flex-col"><div class="flex items-baseline gap-2"><span class="font-telemetry-metric text-telemetry-metric text-[#FB7185] font-bold tracking-tight" style="font-family: 'Geist', 'Inter', sans-serif !important;">1,040+</span><span class="font-code-md text-code-md text-[#FDA4AF]">Hrs/Yr</span></div><span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Manual Audit Hours Reclaimed</span></div></div><!-- Stat 3 --><div class="relative bg-[#121217] p-space-lg rounded-sm border border-surface-container-highest/60 flex flex-col justify-between shadow-sm overflow-hidden"><div class="absolute top-0 right-0 w-2 h-2 border-t-2 border-r-2 border-[#00F0FF]/40"></div><div class="flex items-center justify-between pb-space-sm"><span class="font-telemetry-badge text-telemetry-badge uppercase text-outline tracking-wider">// SCALE_METRICS</span><span class="material-symbols-outlined text-outline text-[18px]">database</span></div><div class="flex flex-col"><span class="font-telemetry-metric text-telemetry-metric text-on-surface font-semibold tracking-tight" style="font-family: 'Geist', 'Inter', sans-serif !important;">Millions</span><span class="font-body-sm text-body-sm text-on-surface-variant mt-1">xAPI, SCORM &amp; HRIS Payloads Ingested</span></div></div><!-- Stat 4 (High Voltage Cyan Highlight) --><div class="relative bg-[#121518] p-space-lg rounded-sm border border-[#00F0FF]/40 flex flex-col justify-between shadow-[0_0_15px_rgba(0,240,255,0.08)] overflow-hidden"><div class="absolute -left-0.5 top-2 bottom-2 w-0.5 bg-[#00F0FF]"></div><div class="flex items-center justify-between pb-space-sm"><span class="font-telemetry-badge text-telemetry-badge uppercase text-[#00F0FF] font-medium tracking-wider">// RUNTIME_STATUS</span><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00F0FF] opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#00F0FF]"></span></span></div><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-telemetry-metric text-telemetry-metric text-[#00F0FF] font-semibold tracking-tight" style="font-family: 'Geist', 'Inter', sans-serif !important;">100%</span><span class="font-telemetry-badge text-telemetry-badge bg-[#10191c] border border-[#00F0FF]/30 px-1.5 py-0.5 rounded text-[#00F0FF]">PROD READY</span></div><span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Validated Working Code Repos</span></div></div></div>
+</section>
+<!-- 2. Live GitHub Workstreams (Dynamic Repo Grid) -->
+<section class="flex flex-col gap-space-lg" id="repos-section">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-code-md text-code-md text-primary">
+<span class="material-symbols-outlined text-[16px] text-primary animate-spin">sync</span>
+<span class="font-medium tracking-wide">Pushed from GitHub API • Auto-syncing</span>
+<span class="font-telemetry-badge text-telemetry-badge bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant">live stream</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Active Workstreams &amp; Engineering Labs</h2>
+</div>
+<!-- Category Filters -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-xl">
+<button class="px-space-md py-1 rounded bg-surface-container text-primary font-body-sm text-body-sm font-medium">All (4)</button>
+<button class="px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors">Agentic &amp; RAG</button>
+<button class="px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors">Enterprise Pipelines</button>
+<button class="px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors">Developer Tooling</button>
+</div>
+</div>
+<!-- Repo Cards Matrix (2x2) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Repo Card 1 -->
+<div class="group bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between hover:bg-surface-container transition-all shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+<a class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5" href="#">
+<span class="">scorm-ai-extractor</span>
+<span class="material-symbols-outlined text-[14px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">open_in_new</span>
+</a>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge uppercase px-2 py-0.5 rounded bg-surface-container text-tertiary">Public</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Zero-shot SCORM &amp; xAPI manifest parsing engine using Claude 3.5 Sonnet &amp; structured JSON schemas. Ingests raw packages, unpacks zip hierarchies, and flags compliance variances autonomously.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Next.js 14</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">TypeScript</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-primary">RAG Engine</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">MCP Protocol</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">PostgreSQL</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md font-code-md text-code-md text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-secondary" style="color: rgb(251, 113, 133);">star</span> 142</span>
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-outline">call_split</span> 28</span>
+</div>
+<span class="text-primary font-telemetry-badge text-telemetry-badge">Active 42m ago</span>
+</div>
+</div>
+<!-- Repo Card 2 -->
+<div class="group bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between hover:bg-surface-container transition-all shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-[#FB7185]" style="color: rgb(251, 113, 133);">database</span>
+<a class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5" href="#">
+<span class="">enterprise-lrs-pg</span>
+<span class="material-symbols-outlined text-[14px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">open_in_new</span>
+</a>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge uppercase px-2 py-0.5 rounded bg-surface-container text-tertiary">Public</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              High-throughput Learning Record Store engine built on PostgreSQL with real-time audit compliance scoring. Capable of receiving, validating, and partition-indexing 12,000+ statements per second.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Python 3.12</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">FastAPI</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-secondary" style="color: rgb(251, 113, 133);">TimescaleDB</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Kafka</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md font-code-md text-code-md text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-secondary" style="color: rgb(251, 113, 133);">star</span> 98</span>
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-outline">call_split</span> 19</span>
+</div>
+<span class="text-on-surface-variant font-telemetry-badge text-telemetry-badge">Active 3h ago</span>
+</div>
+</div>
+<!-- Repo Card 3 -->
+<div class="group bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between hover:bg-surface-container transition-all shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">hub</span>
+<a class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5" href="#">
+<span class="">mcp-talent-orchestrator</span>
+<span class="material-symbols-outlined text-[14px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">open_in_new</span>
+</a>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge uppercase px-2 py-0.5 rounded bg-surface-container text-tertiary">Public</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Model Context Protocol (MCP) server establishing programmatic zero-latency bridge between Docebo LMS, Workday HRIS schemas, and local desktop AI agents (Claude Desktop, Cursor).
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">TypeScript</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-primary">MCP Standard</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Docebo API</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Workday RaaS</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md font-code-md text-code-md text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-secondary" style="color: rgb(251, 113, 133);">star</span> 210</span>
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-outline">call_split</span> 44</span>
+</div>
+<span class="text-on-surface-variant font-telemetry-badge text-telemetry-badge">Active 1d ago</span>
+</div>
+</div>
+<!-- Repo Card 4 -->
+<div class="group bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between hover:bg-surface-container transition-all shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">memory</span>
+<a class="font-headline-sm text-headline-sm font-semibold text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5" href="#">
+<span class="">context-window-optimizer</span>
+<span class="material-symbols-outlined text-[14px] text-outline opacity-0 group-hover:opacity-100 transition-opacity">open_in_new</span>
+</a>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge uppercase px-2 py-0.5 rounded bg-surface-container text-tertiary">Public</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Dynamic token budget trimmer and semantic compressor for multi-turn enterprise agent reasoning. Drastically reduces inference overhead while safeguarding critical audit parameters.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Rust</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Python</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-tertiary">Vector DB</span>
+<span class="font-code-md text-code-md px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">Tiktoken</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-md font-code-md text-code-md text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-secondary" style="color: rgb(251, 113, 133);">star</span> 87</span>
+<span class="flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[14px] text-outline">call_split</span> 12</span>
+</div>
+<span class="text-on-surface-variant font-telemetry-badge text-telemetry-badge">Active 2d ago</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. System Architecture & Case Studies -->
+<section class="flex flex-col gap-space-xl" id="case-studies-section">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-code-md text-code-md text-tertiary">
+<span class="material-symbols-outlined text-[16px]">architecture</span>
+<span class="font-medium tracking-wide uppercase">Operational Blueprint • Production Scale</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">System Architecture &amp; Quantified Case Studies</h2>
+</div>
+<!-- Case Study 1: Enterprise Course Audit Platform -->
+<div class="bg-surface-container-low rounded-xl p-space-lg md:p-space-xl flex flex-col gap-space-lg shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-md">
+<span class="p-2.5 rounded bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</span>
+<div>
+<span class="font-telemetry-badge text-telemetry-badge uppercase text-primary">Case Study 01 // Talent Ops Ingestion</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Enterprise Course Audit &amp; Metadata Extraction Platform</h3>
+</div>
+</div>
+<div class="flex items-center gap-2 font-code-md text-code-md bg-[#121217] border border-[#FCEE09]/30 px-3 py-1 rounded-sm shadow-[0_0_10px_rgba(252,238,9,0.08)]"><span class="font-telemetry-badge text-[#FCEE09]">STATUS:</span><span class="text-on-surface font-medium">ENTERPRISE_PROD_DEPLOYED</span><div class="flex items-center gap-0.5 ml-1"><span class="w-1.5 h-3 bg-[#FCEE09] transform -skew-x-12"></span><span class="w-1.5 h-3 bg-[#101014] transform -skew-x-12"></span><span class="w-1.5 h-3 bg-[#FCEE09] transform -skew-x-12"></span></div></div>
+</div>
+<!-- Tactile Data-Flow Diagram (Inline SVG + CSS Nodes) -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-outline font-code-md text-code-md pb-2">
+<span class="">DATA-FLOW MANIFEST: INGEST_PIPELINE_V4</span>
+<span class="text-primary font-telemetry-badge text-telemetry-badge">FLOW: SYNCHRONOUS</span>
+</div>
+<!-- Pipeline Visualization -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-2 pt-2">
+<!-- Node 1 -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-outline">STAGE 01</span>
+<span class="material-symbols-outlined text-outline text-[16px]">inventory_2</span>
+</div>
+<div class="font-code-md text-code-md text-on-surface font-medium pt-2">Raw SCORM / xAPI Zip</div>
+<div class="text-[11px] font-code-md text-on-surface-variant">Manifest &amp; Media Payload</div>
+</div>
+<!-- Node 2 -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">STAGE 02</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">transform</span>
+</div>
+<div class="font-code-md text-code-md text-on-surface font-medium pt-2">AST Unpack &amp; Tokenizer</div>
+<div class="text-[11px] font-code-md text-on-surface-variant">Text &amp; Quiz Extraction</div>
+</div>
+<!-- Node 3 -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-primary">STAGE 03</span>
+<span class="material-symbols-outlined text-primary text-[16px]">psychology</span>
+</div>
+<div class="font-code-md text-code-md text-primary font-medium pt-2">LLM Schema Validation</div>
+<div class="text-[11px] font-code-md text-on-surface-variant">Claude 3.5 Sonnet / JSON</div>
+</div>
+<!-- Node 4 -->
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between"><div class="flex items-center justify-between"><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185]" style="color: #FB7185;">STAGE 04</span><span class="material-symbols-outlined text-[16px] text-[#FB7185]" style="color: #FB7185;">dashboard_customize</span></div><div class="font-code-md text-code-md font-medium pt-2 text-[#FB7185]" style="color: rgb(251, 113, 133);">Audit Scorecard</div><div class="text-[11px] font-code-md text-on-surface-variant">Docebo Webhook Sync</div></div>
+</div>
+</div>
+<!-- 3 Executive Data Callouts -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-2">
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<span class="font-telemetry-badge text-telemetry-badge uppercase text-error">Operational Friction</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              Manual compliance reviews consumed <strong>35+ minutes per course package</strong> with an unacceptably high 18% variance in subjective QA audit flags across global learning partners.
+            </p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<span class="font-telemetry-badge text-telemetry-badge uppercase text-tertiary">Technical Solution &amp; APIs</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              Built automated ingestion engine using headless AST XML parsing, chunking heuristics, and GPT-4o / Claude 3.5 structured function calling with programmatic sync directly into the Docebo LMS API.
+            </p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1"><span class="font-telemetry-badge text-telemetry-badge uppercase text-[#FB7185] font-semibold" style="color: rgb(251, 113, 133);">Quantified Business Impact</span><p class="font-body-sm text-body-sm leading-relaxed font-medium text-[#FDA4AF]" style="color: rgb(253, 164, 175);">Achieved <strong class="text-white font-semibold">94% reduction</strong> in audit latency (reduced down to 1.8 mins/package) with 99.4% precision and 1,040+ hours in annualized engineer efficiency reclaimed.</p></div>
+</div>
+</div>
+<!-- Case Study 2: Unified Enterprise Learning Record Store (PostgreSQL) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg md:p-space-xl flex flex-col gap-space-lg shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md">
+<div class="flex items-center gap-space-md">
+<span class="p-2.5 rounded bg-surface-container-high text-secondary flex items-center justify-center" style="color: rgb(251, 113, 133);">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</span>
+<div>
+<span class="font-telemetry-badge text-telemetry-badge uppercase text-secondary" style="color: rgb(251, 113, 133);">Case Study 02 // Enterprise Telemetry</span>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Unified LRS Pipeline &amp; Compliance Lakehouse</h3>
+</div>
+</div>
+<span class="font-code-md text-code-md text-primary bg-surface-container px-3 py-1 rounded">Throughput: 12k evt/sec</span>
+</div>
+<!-- Tactile Data-Flow Diagram (Case Study 2) -->
+<div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-outline font-code-md text-code-md pb-2">
+<span class="">DATA-FLOW MANIFEST: TELEMETRY_STREAM_V2</span>
+<span class="text-secondary font-telemetry-badge text-telemetry-badge" style="color: rgb(251, 113, 133);">PIPELINE: DISTRIBUTED</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-2 pt-2">
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-outline">SRC 01</span>
+<span class="material-symbols-outlined text-outline text-[16px]">stream</span>
+</div>
+<div class="font-code-md text-code-md text-on-surface font-medium pt-2">xAPI Statement Firehose</div>
+<div class="text-[11px] font-code-md text-on-surface-variant">LMS &amp; Native Apps</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between"><div class="flex items-center justify-between"><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185]" style="color: #FB7185;">INGEST 02</span><span class="material-symbols-outlined text-[16px] text-[#FB7185]" style="color: #FB7185;">reorder</span></div><div class="font-code-md text-code-md font-medium pt-2 text-[#FB7185]" style="color: rgb(251, 113, 133);">Kafka Event Stream</div><div class="text-[11px] font-code-md text-on-surface-variant">Zero-loss Ingestion</div></div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-primary">CORE 03</span>
+<span class="material-symbols-outlined text-primary text-[16px]">table_rows</span>
+</div>
+<div class="font-code-md text-code-md text-primary font-medium pt-2">PostgreSQL Partition</div>
+<div class="text-[11px] font-code-md text-on-surface-variant">Normalized JSONB Schema</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">DEST 04</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">monitoring</span>
+</div>
+<div class="font-code-md text-code-md text-tertiary font-medium pt-2">Executive Analytics</div>
+<div class="text-[11px] font-code-md text-on-surface-variant">Workday Sync &amp; Audit</div>
+</div>
+</div>
+</div>
+<!-- 3 Executive Data Callouts -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-2">
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<span class="font-telemetry-badge text-telemetry-badge uppercase text-error">Operational Friction</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              Disjointed employee learning records spread across 4 disconnected SaaS silos, preventing accurate compliance audit verification and enterprise-wide skill graph visibility.
+            </p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1">
+<span class="font-telemetry-badge text-telemetry-badge uppercase text-tertiary">Technical Solution &amp; APIs</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              Architected a unified LRS backend engine on PostgreSQL with Timescale partitioning, handling over 10,000 events/second with automated schema normalization and Workday RaaS sync routines.
+            </p>
+</div>
+<div class="p-space-md rounded bg-surface-container flex flex-col gap-1"><span class="font-telemetry-badge text-telemetry-badge uppercase text-[#FB7185] font-semibold" style="color: rgb(251, 113, 133);">Quantified Business Impact</span><p class="font-body-sm text-body-sm leading-relaxed font-medium text-[#FDA4AF]" style="color: rgb(253, 164, 175);">Eliminated <strong class="text-white font-semibold">$420,000 annually</strong> in redundant 3rd-party reporting subscriptions while generating an immutable, 100% compliant data trail for global regulatory bodies.</p></div>
+</div>
+</div>
+</section>
+<!-- 4. Technical Engine & Capabilities Matrix -->
+<section class="flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-code-md text-code-md text-primary">
+<span class="material-symbols-outlined text-[16px]">developer_board</span>
+<span class="font-medium tracking-wide uppercase">Core Capabilities • Technical DNA</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Enterprise Architecture Matrix</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Column 1: AI & Agentic Orchestration -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-2 pb-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">smart_toy</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">AI &amp; Agentic Orchestration</h3>
+</div>
+<div class="flex flex-col gap-2 font-code-md text-code-md">
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">RAG Architectures &amp; HyDE</span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary">ACTIVE</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">Vector Stores (pgvector, Pinecone)</span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary">ACTIVE</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">Model Context Protocol (MCP)</span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary">ACTIVE</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">Dynamic Token Budget Trimming</span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary">ACTIVE</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">Continuous Eval Frameworks</span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary">ACTIVE</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">Few-shot Prompt Engineering</span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary">ACTIVE</span>
+</div>
+</div>
+</div>
+<!-- Column 2: Enterprise Systems & APIs -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm"><div class="flex items-center gap-2 pb-space-sm"><span class="material-symbols-outlined text-[20px] text-[#FB7185]" style="color: #FB7185;">lan</span><h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Enterprise Systems &amp; APIs</h3></div><div class="flex flex-col gap-2 font-code-md text-code-md"><div class="p-2.5 rounded bg-surface-container flex items-center justify-between"><span class="text-on-surface">Docebo Core APIs &amp; Webhooks</span><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185] font-medium" style="color: #FB7185;">EXPERT</span></div><div class="p-2.5 rounded bg-surface-container flex items-center justify-between"><span class="text-on-surface">Workday Integration (RAAS/EIB)</span><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185] font-medium" style="color: #FB7185;">EXPERT</span></div><div class="p-2.5 rounded bg-surface-container flex items-center justify-between"><span class="text-on-surface">xAPI &amp; SCORM Package Parsing</span><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185] font-medium" style="color: #FB7185;">EXPERT</span></div><div class="p-2.5 rounded bg-surface-container flex items-center justify-between"><span class="text-on-surface">PII Redaction &amp; Data Scrims</span><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185] font-medium" style="color: #FB7185;">EXPERT</span></div><div class="p-2.5 rounded bg-surface-container flex items-center justify-between"><span class="text-on-surface">SOC2 Type II Control Mapping</span><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185] font-medium" style="color: #FB7185;">EXPERT</span></div><div class="p-2.5 rounded bg-surface-container flex items-center justify-between"><span class="text-on-surface">SSO / SAML 2.0 / OAuth2 Token Flows</span><span class="font-telemetry-badge text-telemetry-badge text-[#FB7185] font-medium" style="color: #FB7185;">EXPERT</span></div></div></div>
+<!-- Column 3: Full-Stack Prototyping -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-2 pb-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[20px]">construction</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Full-Stack Prototyping</h3>
+</div>
+<div class="flex flex-col gap-2 font-code-md text-code-md">
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">Python (FastAPI, LangChain)</span>
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">DEPLOYED</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">TypeScript / Next.js / Tailwind</span>
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">DEPLOYED</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">PostgreSQL Schema Optimization</span>
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">DEPLOYED</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">REST &amp; GraphQL Schema Design</span>
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">DEPLOYED</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">Cloud Sandboxes &amp; Docker Stacks</span>
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">DEPLOYED</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="text-on-surface">GitHub Actions Automated CI/CD</span>
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary">DEPLOYED</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Executive Contact & PGP Verification Bar -->
+<section class="bg-surface-container-low rounded-xl p-space-lg md:p-space-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl shadow-md" id="contact-section">
+<div class="flex flex-col gap-2 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="font-telemetry-badge text-telemetry-badge uppercase px-2 py-0.5 rounded bg-surface-container text-primary">Direct Channel</span>
+<span class="font-code-md text-code-md text-on-surface-variant">PGP Fingerprint Verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Initiate Strategic Dialogue</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Available for enterprise AI consulting, talent infrastructure system modernization, or executive technical advisory roles.
+        </p>
+<!-- Monospace Fingerprint Block -->
+<div class="mt-2 bg-surface-container-lowest p-space-sm rounded font-code-md text-[11px] text-outline flex items-center justify-between gap-2 overflow-x-auto">
+<span class="truncate">FINGERPRINT: 4E9A B781 990C FE42 8107 DA11 3902 4BC1 AF88 205B</span>
+<button class="hover:text-primary transition-colors shrink-0" onclick="navigator.clipboard.writeText('4E9AB781990CFE428107DA1139024BC1AF88205B')">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+</button>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md shrink-0">
+<a class="relative flex items-center gap-2 px-space-lg py-3 rounded-sm bg-[#FCEE09] text-[#161310] hover:bg-[#ffe600] font-headline-sm text-headline-sm font-bold transition-all shadow-[0_0_18px_rgba(252,238,9,0.35)] border-l-4 border-[#00F0FF]" href="mailto:brandon@example.com"><span class="material-symbols-outlined text-[18px] text-[#161310]">cell_tower</span><span class="">SEND TRANSMISSION</span><span class="font-telemetry-badge text-[9px] bg-[#161310] text-[#FCEE09] px-1 py-0.5 rounded-xs">[NET_SEND]</span></a>
+<a class="flex items-center gap-2 px-space-md py-3 rounded bg-surface-container text-on-surface hover:text-primary transition-colors font-headline-sm text-headline-sm" href="https://linkedin.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="">LinkedIn</span>
+</a>
+<a class="flex items-center gap-2 px-space-md py-3 rounded bg-surface-container text-on-surface hover:text-primary transition-colors font-headline-sm text-headline-sm" href="https://github.com" rel="noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">code</span>
+<span class="">GitHub</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for tab switching feedback
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', function() {
+      if(this.innerText.includes('All') || this.innerText.includes('Agentic') || this.innerText.includes('Pipelines') || this.innerText.includes('Developer')) {
+        const parent = this.parentElement;
+        parent.querySelectorAll('button').forEach(b => {
+          b.className = 'px-space-md py-1 rounded text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors';
+        });
+        this.className = 'px-space-md py-1 rounded bg-surface-container text-primary font-body-sm text-body-sm font-medium';
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest/40 py-space-xl"><div class="w-full max-w-[1600px] mx-auto px-gutter md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md"><div class="flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-low border border-surface-container-highest/60"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="font-code-md text-code-md text-primary font-medium">System operational • Deployed via Google Stitch</span></div><span class="font-code-md text-code-md text-outline hidden sm:inline">|</span><p class="font-code-md text-code-md text-on-surface-variant text-center sm:text-left">© 2025 Brandon Horishny • Systems Architecture &amp; Applied AI</p></div><div class="flex items-center gap-space-lg"><a class="font-code-md text-code-md text-on-surface-variant hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a><a class="font-code-md text-code-md text-on-surface-variant hover:text-primary transition-colors" href="https://linkedin.com" rel="noreferrer" target="_blank">LinkedIn</a><a class="font-code-md text-code-md text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" data-path="pgp-key" href="#"><span class="material-symbols-outlined text-[14px]">key</span>PGP Key</a></div></div></footer>
+
+</body></html>

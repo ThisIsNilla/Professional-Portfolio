@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ARCHITECT // TALENT.AI - Enterprise Software Architect</title>
+<!-- Fonts & Google Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-surface-variant": "#bbcabf",
+            "secondary-fixed": "#a6f2d1",
+            "primary-container": "#10b981",
+            "error": "#ffb4ab",
+            "on-tertiary-container": "#39393c",
+            "inverse-surface": "#e5e1e4",
+            "outline": "#86948a",
+            "surface-container-highest": "#353437",
+            "tertiary-fixed": "#e4e1e5",
+            "on-tertiary-fixed-variant": "#47464a",
+            "primary-fixed-dim": "#4edea3",
+            "on-error": "#690005",
+            "on-secondary": "#003828",
+            "secondary-container": "#005c43",
+            "on-error-container": "#ffdad6",
+            "on-surface": "#e5e1e4",
+            "surface-variant": "#353437",
+            "on-secondary-fixed": "#002116",
+            "on-tertiary-fixed": "#1b1b1e",
+            "on-secondary-container": "#87d2b2",
+            "inverse-on-surface": "#313032",
+            "secondary": "#8bd6b6",
+            "on-tertiary": "#303033",
+            "on-primary-fixed-variant": "#005236",
+            "surface-bright": "#39393b",
+            "tertiary-fixed-dim": "#c8c6c9",
+            "outline-variant": "#3c4a42",
+            "surface-container": "#201f22",
+            "tertiary-container": "#a4a2a6",
+            "surface-container-high": "#2a2a2c",
+            "surface-tint": "#4edea3",
+            "surface-dim": "#131315",
+            "primary": "#4edea3",
+            "on-primary-fixed": "#002113",
+            "primary-fixed": "#6ffbbe",
+            "on-background": "#e5e1e4",
+            "on-primary-container": "#00422b",
+            "inverse-primary": "#006c49",
+            "secondary-fixed-dim": "#8bd6b6",
+            "on-primary": "#003824",
+            "error-container": "#93000a",
+            "surface-container-low": "#1c1b1d",
+            "background": "#131315",
+            "tertiary": "#c8c6c9",
+            "surface-container-lowest": "#0e0e10",
+            "on-secondary-fixed-variant": "#00513b",
+            "surface": "#131315"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "margin-lg": "4rem",
+            "gutter-lg": "2rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem",
+            "gutter-md": "1.5rem",
+            "space-xl": "2.5rem",
+            "margin-md": "2rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "label-sm": ["JetBrains Mono"],
+            "headline-xl-mobile": ["Geist"],
+            "body-sm": ["Geist"],
+            "label-md": ["JetBrains Mono"],
+            "headline-xl": ["Geist"],
+            "headline-sm": ["Geist"],
+            "body-md": ["Geist"],
+            "headline-lg-mobile": ["Geist"],
+            "headline-lg": ["Geist"],
+            "headline-md": ["Geist"],
+            "body-lg": ["Geist"],
+            "code-inline": ["JetBrains Mono"]
+          },
+          "fontSize": {
+            "label-sm": ["0.6875rem", { "lineHeight": "1", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "headline-xl-mobile": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+            "body-sm": ["0.8125rem", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+            "label-md": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "headline-xl": ["3.5rem", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+            "headline-sm": ["1.125rem", { "lineHeight": "1.4", "letterSpacing": "-0.015em", "fontWeight": "500" }],
+            "body-md": ["0.9375rem", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.25", "letterSpacing": "-0.025em", "fontWeight": "600" }],
+            "headline-lg": ["2.25rem", { "lineHeight": "1.2", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "headline-md": ["1.5rem", { "lineHeight": "1.3", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "code-inline": ["0.8125rem", { "lineHeight": "1.4", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col">
+<!-- Shared TopNavBar Component -->
+<header class="bg-surface/90 dark:bg-surface/90 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline-variant">
+<div class="flex justify-between items-center w-full px-gutter md:px-gutter-lg max-w-[1200px] mx-auto h-16">
+<!-- Brand Logo / Product Name with Terminal Icon -->
+<a class="flex items-center gap-space-sm font-label-md text-label-md tracking-wider font-semibold text-on-surface dark:text-on-surface uppercase group" href="#hero">
+<span class="p-1 rounded bg-surface-container border border-outline-variant text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+</span>
+<span class="tracking-widest">ARCHITECT // TALENT.AI</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="text-primary dark:text-primary font-medium border-b border-primary dark:border-primary pb-1 font-label-sm text-label-sm uppercase tracking-wider" href="#case-studies">Case Studies</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors duration-150 font-label-sm text-label-sm uppercase tracking-wider" href="#architecture">Architecture</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors duration-150 font-label-sm text-label-sm uppercase tracking-wider" href="#repos">Active Repos</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors duration-150 font-label-sm text-label-sm uppercase tracking-wider" href="#metrics">Metrics</a>
+</nav>
+<!-- Trailing Status & Action Buttons -->
+<div class="flex items-center gap-space-md">
+<!-- Live Status Pill -->
+<div class="hidden lg:flex items-center gap-2 px-2.5 py-1 rounded bg-secondary-container/20 border border-secondary-container text-primary">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase">Available for Advisory</span>
+</div>
+<!-- Trailing Icon Actions -->
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant">
+<a class="p-1.5 hover:text-primary transition-colors cursor-pointer" href="#repos" title="View Repos">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</a>
+<a class="p-1.5 hover:text-primary transition-colors cursor-pointer" href="#contact" title="Direct Transmission">
+<span class="material-symbols-outlined text-[18px]">alternate_email</span>
+</a>
+</div>
+<!-- Primary CTA -->
+<a class="px-3.5 py-1.5 rounded-lg bg-on-surface text-surface font-label-sm text-label-sm font-semibold tracking-wider hover:bg-inverse-surface transition-colors cursor-pointer active:opacity-80" href="#contact">
+          Advisory Brief
+        </a>
+</div>
+</div>
+</header>
+<!-- Main Content Container (Bento Grid Architecture) -->
+<main class="w-full max-w-[1200px] mx-auto px-gutter md:px-gutter-lg flex-1">
+<!-- 1. Hero Section -->
+<section class="pt-12 md:pt-20 pb-16 border-b border-outline-variant" id="hero">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Hero Narrative (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 self-start px-2 py-1 bg-surface-container border border-outline-variant rounded font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-primary font-bold">CORE_SYS:</span>
+<span>ENTERPRISE TALENT TECH &amp; MCP AGENTS</span>
+</div>
+<h1 class="hidden md:block font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">
+            Architecting Enterprise AI &amp; Automation for Talent Technology.
+          </h1>
+<h1 class="md:hidden font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-bold tracking-tight">
+            Architecting Enterprise AI &amp; Automation for Talent Technology.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            Technical scoping, rapid production prototyping, and scalable corporate talent systems. Leveraging Python, TypeScript, Model Context Protocol (MCP), and automated event ingestion pipelines to bridge human capital with surgical intelligence.
+          </p>
+<!-- Action Buttons & Quick Telemetry -->
+<div class="flex flex-wrap items-center gap-space-md pt-4">
+<a class="px-5 py-2.5 rounded-lg bg-on-surface text-surface font-label-md text-label-md font-semibold hover:bg-inverse-surface transition-colors flex items-center gap-2" href="#case-studies">
+<span>Explore Case Studies</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+<a class="px-5 py-2.5 rounded-lg bg-surface-container border border-outline-variant hover:border-outline text-on-surface font-label-md text-label-md transition-colors flex items-center gap-2" href="#repos">
+<span class="material-symbols-outlined text-[16px]">code</span>
+<span>View Repositories</span>
+</a>
+<div class="flex items-center gap-space-sm pl-2 border-l border-outline-variant text-on-surface-variant">
+<a class="p-2 hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank" title="GitHub Source">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</a>
+<a class="p-2 hover:text-primary transition-colors" href="mailto:architect@talent.ai" title="Encrypted Relay">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right Diagnostic Status Bento Module (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container border border-outline-variant rounded-xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-outline-variant pb-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SYSTEM DIAGNOSTICS</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1.5">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+              READY
+            </span>
+</div>
+<div class="space-y-3 font-code-inline text-code-inline text-on-surface-variant">
+<div class="flex justify-between">
+<span class="text-tertiary">KERNEL</span>
+<span class="text-on-surface">MCP // ANTIGRAVITY</span>
+</div>
+<div class="flex justify-between">
+<span class="text-tertiary">UPTIME</span>
+<span class="text-on-surface">99.998% SLA</span>
+</div>
+<div class="flex justify-between">
+<span class="text-tertiary">DISPATCH LATENCY</span>
+<span class="text-primary font-medium">&lt; 38ms</span>
+</div>
+<div class="flex justify-between">
+<span class="text-tertiary">ACTIVE STACK</span>
+<span class="text-on-surface">PY3.12 / TS / PG16</span>
+</div>
+</div>
+<div class="pt-2 border-t border-outline-variant">
+<div class="p-space-sm bg-surface-container-lowest rounded border border-outline-variant flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface">ADVISORY CAPACITY</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">Q2 OPEN</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Impact Metrics Ribbon -->
+<section class="py-12 border-b border-outline-variant" id="metrics">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter md:gap-space-lg">
+<!-- Metric 1 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl flex flex-col justify-between">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">INFRASTRUCTURE VETERAN</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">13+ Years</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Talent Systems &amp; Learning Architecture</div>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl flex flex-col justify-between">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">EFFICIENCY RECOVERED</div>
+<div class="font-headline-lg text-headline-lg font-bold text-primary tracking-tight">1,040+ Hours</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Operational Overhead Eradicated</div>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl flex flex-col justify-between">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">TELEMETRY SCALE</div>
+<div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">10M+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Enterprise Event Records Ingested</div>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl flex flex-col justify-between">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-2">DELIVERY CADENCE</div>
+<div class="font-headline-lg text-headline-lg font-bold text-secondary tracking-tight">Zero-to-One</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Production AI Prototypes Delivered</div>
+</div>
+</div>
+</section>
+<!-- 3. Proof of Execution (Case Studies) -->
+<section class="py-16 border-b border-outline-variant" id="case-studies">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-1">// PROOF OF EXECUTION</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Architectural Case Studies</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Measurable system transformations applying rigorous systems engineering to enterprise talent bottlenecks.
+        </p>
+</div>
+<!-- Case Studies Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Case Study 1 -->
+<div class="bg-surface-container border border-outline-variant rounded-xl p-space-lg flex flex-col justify-between hover:border-outline transition-colors">
+<div>
+<div class="flex items-center justify-between border-b border-outline-variant pb-space-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-tertiary">SYS_ENG_01</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-primary">SCORM // LLM PARSER</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-sm">
+              Enterprise Course Audit &amp; Content Parser
+            </h3>
+<!-- Structured Telemetry Flow: Friction -> Stack -> Outcome -->
+<div class="space-y-4 my-space-md">
+<div class="p-space-sm bg-surface-container-low rounded border border-outline-variant">
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider block mb-1">Operational Friction:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Manual auditing of thousands of legacy learning modules inside enterprise LMS resulted in over 1,400 hours of redundant engineering and catalog inconsistencies across regional business units.
+                </p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded border border-outline-variant">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Architecture &amp; Tech Stack:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Engineered automated Python content parsing daemon with LMS REST API connectors, deterministic SCORM manifest extraction, and OpenAI embeddings for autonomous taxonomy classification.
+                </p>
+</div>
+<div class="p-space-sm bg-secondary-container/20 rounded border border-secondary-container">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">Quantified Business Outcome:</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+                  Eliminated 1,000+ hours of manual labor in 90 days; achieved 100% catalog parity across 14,000 learning entities with real-time auditability.
+                </p>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant flex items-center justify-between font-code-inline text-code-inline text-on-surface-variant">
+<span>AUDIT_TIME: 1.4K hrs ➔ 12 mins</span>
+<span class="text-primary font-medium">STATUS: IN PRODUCTION</span>
+</div>
+</div>
+<!-- Case Study 2 -->
+<div class="bg-surface-container border border-outline-variant rounded-xl p-space-lg flex flex-col justify-between hover:border-outline transition-colors">
+<div>
+<div class="flex items-center justify-between border-b border-outline-variant pb-space-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-tertiary">SYS_ENG_02</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-primary">xAPI // TELEMETRY LRS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-sm">
+              Enterprise Learning Record Store &amp; Analytics
+            </h3>
+<!-- Structured Telemetry Flow: Friction -> Stack -> Outcome -->
+<div class="space-y-4 my-space-md">
+<div class="p-space-sm bg-surface-container-low rounded border border-outline-variant">
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider block mb-1">Operational Friction:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Disjointed learner activity logs dispersed across multiple 3rd-party SaaS platforms created critical visibility blind spots, preventing executive talent analytics and regulatory compliance checks.
+                </p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded border border-outline-variant">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider block mb-1">Architecture &amp; Tech Stack:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  High-throughput asynchronous xAPI event receiver, decoupled queue workers, partitioned PostgreSQL database with JSONB indexing, and real-time streaming to downstream data warehouses.
+                </p>
+</div>
+<div class="p-space-sm bg-secondary-container/20 rounded border border-secondary-container">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">Quantified Business Outcome:</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">
+                  Delivered consolidated global reporting engine handling 10M+ events with sub-50ms ingestion latency and zero packet drop.
+                </p>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant flex items-center justify-between font-code-inline text-code-inline text-on-surface-variant">
+<span>INGESTION_LATENCY: &lt; 50ms</span>
+<span class="text-primary font-medium">STATUS: SCALED GLOBALLY</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Technical Pillars -->
+<section class="py-16 border-b border-outline-variant" id="architecture">
+<div class="mb-8">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-1">// CORE CAPABILITIES</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Technical Pillars</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="bg-surface-container border border-outline-variant rounded-xl p-space-lg flex flex-col">
+<div class="w-10 h-10 rounded bg-surface-container-low border border-outline-variant flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[20px]">neurology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">AI Orchestration &amp; RAG</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Custom prompt graphs, semantic search, vector context window budgeting, and Model Context Protocol (MCP) implementations for autonomous tooling.
+          </p>
+<div class="mt-auto pt-space-sm border-t border-outline-variant/60 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">Prompt Chaining</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">Vector Retrieval</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">MCP Stacks</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container border border-outline-variant rounded-xl p-space-lg flex flex-col">
+<div class="w-10 h-10 rounded bg-surface-container-low border border-outline-variant flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">Talent &amp; HR Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Deep domain infrastructure covering Docebo APIs, Workday integrations, SCORM 1.2/2004 parsing engines, and learning telemetry aggregates.
+          </p>
+<div class="mt-auto pt-space-sm border-t border-outline-variant/60 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">Docebo Core</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">Workday RaaS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">xAPI Specs</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container border border-outline-variant rounded-xl p-space-lg flex flex-col">
+<div class="w-10 h-10 rounded bg-surface-container-low border border-outline-variant flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">Modern Prototyping Stack</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Low-friction deployment pipelines pairing Python, TypeScript, and Postgres with Replit and Codex prototyping environments for immediate validation.
+          </p>
+<div class="mt-auto pt-space-sm border-t border-outline-variant/60 flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">Python 3.12</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">TypeScript</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest border border-outline-variant font-label-sm text-label-sm text-tertiary">PostgreSQL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Active Workstreams (Repository Feed) -->
+<section class="py-16 border-b border-outline-variant" id="repos">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest block mb-1">// CODE TELEMETRY</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Active Workstreams &amp; Repositories</h2>
+</div>
+<div class="font-label-sm text-label-sm text-tertiary">
+          GIT_SYNC: <span class="text-primary font-medium">SYNCHRONIZED (HEAD -&gt; main)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Repo 1 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl hover:border-outline transition-colors group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">code</span>
+<a class="font-code-inline text-code-inline font-semibold text-on-surface group-hover:text-primary transition-colors" href="#repos">
+                mcp-talent-orchestrator
+              </a>
+</div>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
+              LIVE
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-sm">
+            Model Context Protocol server connecting enterprise talent taxonomies and employee learning profiles to autonomous agent runtimes.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/60 font-label-sm text-label-sm text-tertiary">
+<span class="flex items-center gap-1.5">
+<span class="h-2 w-2 rounded-full bg-primary"></span>
+              TypeScript
+            </span>
+<div class="flex items-center gap-3">
+<span>★ 142</span>
+<span>⑂ 28</span>
+<span>Updated 2h ago</span>
+</div>
+</div>
+</div>
+<!-- Repo 2 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl hover:border-outline transition-colors group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">code</span>
+<a class="font-code-inline text-code-inline font-semibold text-on-surface group-hover:text-primary transition-colors" href="#repos">
+                xapi-event-stream-engine
+              </a>
+</div>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+              STABLE
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-sm">
+            High-concurrency microservice for streaming and validating xAPI experience statements directly to partitioned storage.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/60 font-label-sm text-label-sm text-tertiary">
+<span class="flex items-center gap-1.5">
+<span class="h-2 w-2 rounded-full bg-primary-fixed-dim"></span>
+              Python
+            </span>
+<div class="flex items-center gap-3">
+<span>★ 389</span>
+<span>⑂ 64</span>
+<span>Updated yesterday</span>
+</div>
+</div>
+</div>
+<!-- Repo 3 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl hover:border-outline transition-colors group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">code</span>
+<a class="font-code-inline text-code-inline font-semibold text-on-surface group-hover:text-primary transition-colors" href="#repos">
+                docebo-catalog-ai-auditor
+              </a>
+</div>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+              STABLE
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-sm">
+            Autonomous metadata auditor performing embedding-based semantic deduplication and content quality scores over REST APIs.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/60 font-label-sm text-label-sm text-tertiary">
+<span class="flex items-center gap-1.5">
+<span class="h-2 w-2 rounded-full bg-primary-fixed-dim"></span>
+              Python
+            </span>
+<div class="flex items-center gap-3">
+<span>★ 215</span>
+<span>⑂ 41</span>
+<span>Updated 3d ago</span>
+</div>
+</div>
+</div>
+<!-- Repo 4 -->
+<div class="p-space-md bg-surface-container border border-outline-variant rounded-xl hover:border-outline transition-colors group">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">code</span>
+<a class="font-code-inline text-code-inline font-semibold text-on-surface group-hover:text-primary transition-colors" href="#repos">
+                antigravity-proto-scaffold
+              </a>
+</div>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="h-1.5 w-1.5 rounded-full bg-primary animate-pulse"></span>
+              ACTIVE
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant my-space-sm">
+            Full-stack rapid AI application starter optimized for zero-configuration deployments on Replit, Codex, and edge runtimes.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/60 font-label-sm text-label-sm text-tertiary">
+<span class="flex items-center gap-1.5">
+<span class="h-2 w-2 rounded-full bg-primary"></span>
+              TypeScript
+            </span>
+<div class="flex items-center gap-3">
+<span>★ 96</span>
+<span>⑂ 19</span>
+<span>Updated 4h ago</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Advisory Transmission Section -->
+<section class="py-16" id="contact">
+<div class="bg-surface-container border border-outline-variant rounded-xl p-space-lg md:p-space-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-space-lg">
+<div class="max-w-xl">
+<div class="inline-flex items-center gap-2 px-2 py-0.5 rounded bg-secondary-container/20 border border-secondary-container font-label-sm text-label-sm text-primary mb-3">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+            TRANSMISSION TERMINAL
+          </div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Initiate Technical Consultation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Available for enterprise architecture advisories, AI workflow scoping, and high-stakes technical prototyping. Direct encrypted response within 24 hours.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-md w-full md:w-auto">
+<a class="px-6 py-3 rounded-lg bg-on-surface text-surface font-label-md text-label-md font-semibold tracking-wider hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2" href="mailto:architect@talent.ai">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Request Advisory Brief</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Footer Component -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest docked full-width bottom w-full border-t border-outline-variant dark:border-outline-variant">
+<div class="w-full max-w-[1200px] mx-auto px-gutter md:px-gutter-lg py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-md">
+<!-- Brand & Status -->
+<div class="flex flex-col items-center md:items-start gap-1">
+<div class="font-label-sm text-label-sm text-on-surface dark:text-on-surface uppercase tracking-widest flex items-center gap-2">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+<span>ARCHITECT // TALENT.AI</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant">
+          © 2025 ARCHITECT. ALL SYSTEMS OPERATIONAL. LOW-LATENCY EXECUTIVE TALENT INFRASTRUCTURE.
+        </p>
+</div>
+<!-- Footer Navigation Links -->
+<div class="flex flex-wrap items-center justify-center gap-space-md font-label-sm text-label-sm">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#architecture">Architecture Specs</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#repos">Live Repos</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#architecture">MCP Telemetry</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#contact">Advisory Terms</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-150" href="#hero">Security Posture</a>
+</div>
+</div>
+</footer>
+</body></html>
