@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 // Assuming we want to use next/font/google since the design used Google Fonts
 import { Geist, Geist_Mono } from 'next/font/google';
@@ -35,7 +36,9 @@ export default function RootLayout({
         className={`${geist.variable} ${geistMono.variable} bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
 }
+
